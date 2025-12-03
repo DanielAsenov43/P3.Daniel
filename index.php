@@ -1,4 +1,7 @@
 <?php
+
+// Comentario de prueba
+
 require_once("./PHPScripts/connection.php");
 session_start();
 if(isset($_SESSION["USER"])) {
