@@ -1,9 +1,8 @@
-\# Prueba 3 - Daniel  
+# Prueba 3 - Daniel  
 
-\## Proyecto de Daniel para el examen/prueba de GitHub  
+### Proyecto de Daniel para el examen/prueba de GitHub  
 
-\## Autor: \*\*Daniel Asénov\*\*
-
+> Autor: **Daniel Asénov**
 
 > Subiendo un proyecto de PHP
 
@@ -11,19 +10,17 @@
 
 
 
-\### Este es un proyecto de PHP que contiene un supermercado
+Este es un proyecto de PHP que contiene un supermercado
 
-\### con opciones de inicio de sesión, compra y envío.
-
-
-
-\### No requiere de librerías adicionales.
+con opciones de inicio de sesión, compra y envío.
 
 
 
-\## Pasos para ponerlo en marcha:
+No requiere de librerías adicionales.
 
 
+
+##### Pasos para ponerlo en marcha:
 
 1. Abrir Git Bash
 2. `cd ruta/del/proyecto`
