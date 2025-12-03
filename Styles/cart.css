@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    max-width: 75vw;
+
+    .hint {
+        color: rgb(51, 123, 185);
+    }
+
+    .products-container {
+        background-color: white;
+        padding: 10px 20px 20px 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        margin-bottom: 50px;
+
+        .table-container {
+            max-height: 300px;
+            overflow-y: scroll;
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+
+            table {
+                background-color: aliceblue;
+                
+                tr {
+                    user-select: none;
+                    background-color: aliceblue;
+                    padding: 10px;
+
+                    &.title {
+                        background-color: rgb(214, 232, 248);
+                        font-size: 1.1rem;
+                    }
+
+                    &:not(.title):hover {
+                        cursor: pointer;
+                        background-color: rgb(214, 232, 248);
+                    }
+                }
+            }
+        }
+
+        .total {
+            background-color: rgb(228, 252, 236);
+            padding: 10px;
+            font-size: 1.2rem;
+            border-top: rgb(51, 123, 185) 2px solid;
+            border-radius: 0 0 10px 10px;
+            
+            .price {
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .buttons {
+        user-select: none;
+        
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            background-color: white;
+            margin: 20px 10px;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            color: black;
+
+            &:hover {
+                background-color: aliceblue;
+            }
+        }
+    }
+}
+
+.popup {
+    width: 500px;
+    height: max-content;
+    z-index: 5;
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        span {
+            color: rgb(51, 123, 185);
+            background-color: aliceblue;
+            border: rgb(51, 123, 185) 3px solid;
+            padding: 5px 10px;
+            border-radius: 40px;
+            margin-left: 5px;
+        }
+    }
+
+    .description-container {
+        background-color: aliceblue;
+        padding: 0 15px;
+        border-radius: 15px;
+        max-height: 400px;
+        overflow: scroll;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+        background-color: rgb(224, 236, 247);
+        border-radius: 30px;
+
+        span.price {
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(225, 248, 228);
+            border: rgb(146, 223, 156) 3px solid;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+        }
+
+        span.label {
+            margin: auto;
+            margin-left: 20px;
+        }
+    }
+}

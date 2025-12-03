@@ -1,0 +1,64 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+    *:not(legend) {
+        text-align: center;
+    }
+
+    form {
+        input, select {
+            background-color: rgb(228, 240, 252);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        select:hover {
+            background-color: rgb(216, 232, 247);
+            cursor: pointer;
+        }
+
+        .buttons {
+            a, button {
+                color: black;
+                font-size: 1.1rem;
+                padding: 10px;
+                border: rgb(182, 182, 236) 2px solid;
+                border-radius: 30px;
+                margin-top: 10px;
+                text-decoration: none;
+            }
+
+            button {
+                background-color: rgb(149, 241, 149);
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(80%) saturate(150%);
+                }
+            }
+
+            a:hover {
+                cursor: pointer;
+                background-color: aliceblue;
+            }
+        }
+    }
+
+    #error-message {
+        color: red;
+    }
+}

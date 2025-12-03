@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <meta name="popup-close" value="./Icons/close.png"/>
+    <title>Carre3 Popup</title>
+    <style>
+        .popup-container {
+            width: 200px;
+            height: 150px;
+        }
+
+        .popup {
+            text-align: center;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        div.popup-trigger {
+            width: 100px;
+            height: 100px;
+            background-color: lime;
+            margin: 50px;
+        }
+
+        .popup-big {
+            img {
+                width: 500px;
+            }
+        }
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            // Abrir un popup con JS
+            openPopup("test");
+        });
+    </script>
+</head>
+<body>
+    <!-- Popup 1 -->
+    <div class="popup" popup-id="1">
+        <h1>Popup 1</h1>
+        <p>Hola</p>
+        <p>Hola2</p>
+    </div>
+
+    <!-- Popup 2 -->
+    <div class="popup" popup-id="2">
+        <h1>Popup 2</h1>
+        <img src="../Carre3DragAndDrop/Images/apple.png">
+    </div>
+
+    <!-- Popup 3 -->
+    <div class="popup popup-big" popup-id="test">
+        <h1>Popup 3</h1>
+        <p>Popup grande</p>
+        <p>Aquí hay mucho espacio</p>
+        <img src="../Carre3DragAndDrop/Images/banana.webp">
+    </div>
+
+    <!-- Triggers -->
+    <button class="popup-trigger" popup-id="1">Popup 1</button>
+    <button class="popup-trigger" trigger-on="click" popup-id="2">Popup 2</button>
+    <div class="popup-trigger" trigger-on="mouseenter" popup-id="test">Popup 3 (Hover)</div>
+</body>
+</html>

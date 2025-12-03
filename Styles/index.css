@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        fieldset {
+            border-radius: 8px;
+            border: rgb(187, 187, 187) 1px solid;
+            padding: 10px 30px;
+
+            input {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: aliceblue;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            button {
+                padding: 5px 10px;
+                border: rgb(141, 183, 219) 2px solid;
+                background-color: aliceblue;
+                border-radius: 5px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(141, 183, 219);
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #error-message {
+        width: min-content;
+        color: red;
+    }
+}
